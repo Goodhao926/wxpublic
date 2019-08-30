@@ -24,7 +24,7 @@ class wx_deal:
                 wx_deal.access_token =self.get_access_token()
 
         def get_access_token(self):
-                url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx4222d795efaa84b0&secret=f6167154ecb20dabd65354f7cc42789c'
+                url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=请填写自己的appid&secret=请填写自己的密钥'
                 result = json.loads(requests.get(url).text.encode('utf-8')) 
                 return result.get('access_token')
         def updata_photo(self,file_name):#返回图片
